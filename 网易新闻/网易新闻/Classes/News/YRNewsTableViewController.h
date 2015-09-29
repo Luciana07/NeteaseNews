@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  YRNewsTableViewController.h
 //  网易新闻
 //
 //  Created by cyr on 15/9/29.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface YRNewsTableViewController : UITableViewController
 
 @end
-

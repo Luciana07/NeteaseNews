@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		45879AF21BBA527E007BC59E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45879AF11BBA527E007BC59E /* main.m */; };
 		45879AF51BBA527E007BC59E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45879AF41BBA527E007BC59E /* AppDelegate.m */; };
-		45879AF81BBA527E007BC59E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45879AF71BBA527E007BC59E /* ViewController.m */; };
-		45879AFB1BBA527E007BC59E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45879AF91BBA527E007BC59E /* Main.storyboard */; };
 		45879AFD1BBA527E007BC59E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45879AFC1BBA527E007BC59E /* Images.xcassets */; };
 		45879B001BBA527E007BC59E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45879AFE1BBA527E007BC59E /* LaunchScreen.xib */; };
 		45879B0C1BBA527E007BC59E /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45879B0B1BBA527E007BC59E /* ____Tests.m */; };
+		45879B191BBA5539007BC59E /* YRNews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45879B181BBA5539007BC59E /* YRNews.storyboard */; };
+		45879B1C1BBA5575007BC59E /* YRNewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45879B1B1BBA5575007BC59E /* YRNewsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		45879AF11BBA527E007BC59E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		45879AF31BBA527E007BC59E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		45879AF41BBA527E007BC59E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		45879AF61BBA527E007BC59E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		45879AF71BBA527E007BC59E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		45879AFA1BBA527E007BC59E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45879AFC1BBA527E007BC59E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		45879AFF1BBA527E007BC59E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		45879B051BBA527E007BC59E /* 网易新闻Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "网易新闻Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45879B0A1BBA527E007BC59E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45879B0B1BBA527E007BC59E /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		45879B181BBA5539007BC59E /* YRNews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YRNews.storyboard; sourceTree = "<group>"; };
+		45879B1A1BBA5575007BC59E /* YRNewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRNewsTableViewController.h; sourceTree = "<group>"; };
+		45879B1B1BBA5575007BC59E /* YRNewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRNewsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +81,9 @@
 		45879AEE1BBA527E007BC59E /* 网易新闻 */ = {
 			isa = PBXGroup;
 			children = (
+				45879B151BBA54FD007BC59E /* Classes */,
 				45879AF31BBA527E007BC59E /* AppDelegate.h */,
 				45879AF41BBA527E007BC59E /* AppDelegate.m */,
-				45879AF61BBA527E007BC59E /* ViewController.h */,
-				45879AF71BBA527E007BC59E /* ViewController.m */,
-				45879AF91BBA527E007BC59E /* Main.storyboard */,
 				45879AFC1BBA527E007BC59E /* Images.xcassets */,
 				45879AFE1BBA527E007BC59E /* LaunchScreen.xib */,
 				45879AEF1BBA527E007BC59E /* Supporting Files */,
@@ -117,6 +115,32 @@
 				45879B0A1BBA527E007BC59E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45879B151BBA54FD007BC59E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				45879B161BBA54FD007BC59E /* News */,
+				45879B171BBA54FD007BC59E /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		45879B161BBA54FD007BC59E /* News */ = {
+			isa = PBXGroup;
+			children = (
+				45879B181BBA5539007BC59E /* YRNews.storyboard */,
+				45879B1A1BBA5575007BC59E /* YRNewsTableViewController.h */,
+				45879B1B1BBA5575007BC59E /* YRNewsTableViewController.m */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		45879B171BBA54FD007BC59E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +187,7 @@
 		45879AE41BBA527E007BC59E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YR;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = cyr;
 				TargetAttributes = {
@@ -199,9 +224,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45879AFB1BBA527E007BC59E /* Main.storyboard in Resources */,
 				45879B001BBA527E007BC59E /* LaunchScreen.xib in Resources */,
 				45879AFD1BBA527E007BC59E /* Images.xcassets in Resources */,
+				45879B191BBA5539007BC59E /* YRNews.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +244,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45879AF81BBA527E007BC59E /* ViewController.m in Sources */,
 				45879AF51BBA527E007BC59E /* AppDelegate.m in Sources */,
 				45879AF21BBA527E007BC59E /* main.m in Sources */,
+				45879B1C1BBA5575007BC59E /* YRNewsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +269,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		45879AF91BBA527E007BC59E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				45879AFA1BBA527E007BC59E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		45879AFE1BBA527E007BC59E /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
